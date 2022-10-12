@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base{
+  *{
+    @apply box-border
+  }
+
+  body, .App{
+    @apply m-0 p-0 font-outfit
+  }
+
+  h1{
+    @apply font-bold md:text-4xl md:tracking-[2.5px]
+  }
+
+  h2{
+    @apply font-bold md:text-2xl md:tracking-[1.5px]
+  }
+
+  h3{
+    @apply font-bold md:text-xl md:tracking-[1.25px]
+  }
+
+  h4{
+    @apply font-bold md:text-base md:tracking-[1px]
+  }
+
+  p{
+    @apply text-[14px] tracking-[0.88px] leading-[18px] text-grey1
+  }
+
+  
+
+
 }
