@@ -8,11 +8,11 @@ type Props = {}
 
 const MenuScreen = (props: Props) => {
   return (
-    <div className="bg-darkBlue1 h-full px-6 flex flex-col justify-center items-center">
-        <img src={Logo} alt="" />
+    <div className="bg-darkBlue1 h-full gap-4 px-6 flex flex-col justify-center items-center">
+        <img className="mb-4" src={Logo} alt="" />
         <CharacterSelector/>
-        <Buttons></Buttons>
-        <Buttons></Buttons>
+        <Buttons>new game (vs cpu)</Buttons>
+        <Buttons>new game (vs player)</Buttons>
     </div>
   )
 }

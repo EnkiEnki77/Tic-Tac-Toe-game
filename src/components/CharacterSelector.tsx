@@ -10,7 +10,7 @@ type Props = {}
 const CharacterSelector = (props: Props) => {
     console.log(O)
   return (
-    <div className="w-full rounded-2xl shadow-[inset_10_10_10_10] shadow-blue1  bg-darkBlue2 h-[205px] flex flex-col items-center justify-evenly px-6">
+    <div className="w-full mb-4 rounded-2xl shadow-[inset_10_10_10_10] shadow-blue1  bg-darkBlue2 h-[205px] flex flex-col items-center justify-evenly px-6">
         <h4 className="uppercase text-grey1">pick player 1's mark</h4>
         <div className="flex w-full relative px-[60px] justify-between items-center h-[72px]  rounded-[10px] bg-darkBlue1">
           <img className="h-8 w-8 z-30 grayscale" src={X} alt="" />
