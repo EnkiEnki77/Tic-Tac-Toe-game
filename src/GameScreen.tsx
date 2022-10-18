@@ -9,10 +9,10 @@ type Props = {}
 
 const GameScreen = (props: Props) => {
   return (
-    <div>
-        <div>
-            <img src={Logo} alt="" />
-            <Turn/>
+    <div className="flex flex-col gap-5 px-6 pt-6 bg-darkBlue1 h-screen">
+        <div className="flex justify-between mb-11">
+            <img className="w-[72px] h-8" src={Logo} alt="" />
+            <Turn/> 
             <Refresh/>
         </div>
         <Board/>
