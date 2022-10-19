@@ -6,7 +6,7 @@ type Props = {}
 const GameStats = (props: Props) => {
   
   return (
-    <div className="w-full flex gap-5 ">
+    <div className="w-full flex gap-5 px-6">
       <GameStat/>
       <GameStat/>
       <GameStat/>

@@ -2,11 +2,17 @@ import React from 'react'
 
 type Props = {
   children: string
+  className: string
+  handler?: () => void
 }
 
 const Buttons = (props: Props) => {
+  console.log(props.handler)
   return (
-    <button className="shadow-[inset_0_-8px_0px_#cc8b13] h-14 w-full pb-2 bg-yellow1 rounded-2xl text-darkBlue1 font-bold text-base uppercase  ">{props.children}</button>
+    <>
+      {props.handler ? <button onClick={props.handler}  className={`${props.className}  h-14  pb-2  rounded-2xl text-darkBlue1 font-bold text-base uppercase`}>{props.children}</button> : 
+      <button  className={`${props.className}  h-14  pb-2  rounded-2xl text-darkBlue1 font-bold text-base uppercase`}>{props.children}</button>}
+    </>
   )
 }
 
